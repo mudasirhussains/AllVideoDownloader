@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+<!--    custom colors-->
+    <color name="app_background">#DEDEDE</color>
 </resources>
