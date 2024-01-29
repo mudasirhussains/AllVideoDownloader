@@ -6,14 +6,87 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/bottom_bar"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/tvHome"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginBottom="10dp"
+        android:drawablePadding="2dp"
+        android:gravity="center"
+        android:text="Home"
+        android:textColor="@color/bottom_bar_un_seleceted"
+        android:textSize="12sp"
+        app:drawableTint="@color/bottom_bar_un_seleceted"
+        app:drawableTopCompat="@drawable/nav_home"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvProgress"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="2dp"
+        android:gravity="center"
+        android:text="Progress"
+        android:textColor="@color/bottom_bar_un_seleceted"
+        android:textSize="12sp"
+        app:drawableTint="@color/bottom_bar_un_seleceted"
+        app:drawableTopCompat="@drawable/nav_progress"
+        app:layout_constraintBottom_toBottomOf="@id/tvHome"
+        app:layout_constraintEnd_toStartOf="@id/tvFile"
+        app:layout_constraintStart_toEndOf="@id/tvHome" />
+
+
+    <TextView
+        android:id="@+id/tvFile"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="2dp"
+        android:gravity="center"
+        android:text="File"
+        android:textColor="@color/bottom_bar_un_seleceted"
+        android:textSize="12sp"
+        app:drawableTint="@color/bottom_bar_un_seleceted"
+        app:drawableTopCompat="@drawable/nav_file"
+        app:layout_constraintBottom_toBottomOf="@id/tvHome"
+        app:layout_constraintEnd_toStartOf="@+id/tvAbout"
+        app:layout_constraintStart_toEndOf="@id/tvProgress" />
+
+    <TextView
+        android:id="@+id/tvAbout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="2dp"
+        android:gravity="center"
+        android:text="About"
+        android:textColor="@color/bottom_bar_un_seleceted"
+        android:textSize="12sp"
+        app:drawableTint="@color/bottom_bar_un_seleceted"
+        app:drawableTopCompat="@drawable/nav_about"
+        app:layout_constraintBottom_toBottomOf="@id/tvHome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvFile" />
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/tvHome"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

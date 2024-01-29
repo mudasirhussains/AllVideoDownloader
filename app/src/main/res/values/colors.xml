@@ -5,4 +5,7 @@
 
 <!--    custom colors-->
     <color name="app_background">#DEDEDE</color>
+    <color name="bottom_bar_un_seleceted">#1E1E1E</color>
+    <color name="bottom_bar_seleceted">#770808</color>
+    <color name="bottom_bar">#EFC0BD</color>
 </resources>
