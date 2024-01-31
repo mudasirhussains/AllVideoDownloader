@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/nav_home"
+            android:checked="true"
+            app:iconTint="@color/drawer_item"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_download"
+            android:icon="@drawable/drawer_download"
+            app:iconTint="@color/drawer_item"
+            android:title="@string/download" />
+        <item
+            android:id="@+id/nav_progress"
+            app:iconTint="@color/drawer_item"
+            android:icon="@drawable/drawer_progress"
+            android:title="@string/progress" />
+
+    </group>
+
+  <group
+      android:id="@+id/menu_bottom"
+      android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_share_app"
+            android:icon="@drawable/drawer_share"
+            app:iconTint="@color/drawer_item"
+            android:title="@string/share_app" />
+        <item
+            android:id="@+id/nav_about"
+            app:iconTint="@color/drawer_item"
+            android:icon="@drawable/drawer_about"
+            android:title="@string/about" />
+
+    </group>
+</menu>

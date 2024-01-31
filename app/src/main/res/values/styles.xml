@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="NavigationTheme" parent="Theme.Material3.DayNight.NoActionBar">
+    <item name="android:textSize">16sp</item>
+    <item name="android:layout_marginHorizontal" tools:ignore="NewApi">8dp</item>
+</style>
+</resources>
