@@ -8,7 +8,7 @@ import androidx.fragment.app.Fragment
 import com.example.allvideodownloader.databinding.FragmentAboutBinding
 
 class AboutFragment : Fragment() {
-    lateinit var binding : FragmentAboutBinding
+    private lateinit var binding : FragmentAboutBinding
     companion object {
         fun newInstance(): AboutFragment {
             val args = Bundle()

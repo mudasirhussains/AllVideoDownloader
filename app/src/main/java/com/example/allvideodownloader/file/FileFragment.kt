@@ -9,7 +9,7 @@ import com.example.allvideodownloader.about.AboutFragment
 import com.example.allvideodownloader.databinding.FragmentFileBinding
 
 class FileFragment : Fragment() {
-    lateinit var binding: FragmentFileBinding
+    private lateinit var binding: FragmentFileBinding
     companion object {
         fun newInstance(): FileFragment {
             val args = Bundle()

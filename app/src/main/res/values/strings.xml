@@ -3,4 +3,12 @@
     <string name="get_started">Get Started</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">navigation_drawer_open</string>
+    <string name="navigation_drawer_close">navigation_drawer_close</string>
+    <string name="video_downloader">Video Downloader</string>
+    <string name="share_app">Share App</string>
+    <string name="about">About</string>
+    <string name="progress">Progress</string>
+    <string name="download">Download</string>
+    <string name="home">Home</string>
 </resources>
