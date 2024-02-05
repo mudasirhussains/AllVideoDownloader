@@ -27,30 +27,19 @@ fun Context.hideKeyboard(view: View) {
     inputMethodManager.hideSoftInputFromWindow(view.windowToken, 0)
 }
 
-fun Context.colorList(id: Int): ColorStateList {
-    return ColorStateList.valueOf(ContextCompat.getColor(this, id))
-}
-
 fun Context.showToast(message : String) {
 Toast.makeText(this,message,Toast.LENGTH_SHORT).show()
 }
 
-fun String.isValidEmail(): Boolean =
-    this.isNotEmpty() && Patterns.EMAIL_ADDRESS.matcher(this).matches()
-
-//fun customizedRequiredText(context: Context, text: String): CharSequence {
-//    val customFont = ResourcesCompat.getFont(context, R.font.montserrat_bold)
-//    return Spanny().append(
-//        text,
-//        ForegroundColorSpan(ContextCompat.getColor(context, R.color.blackColor))
-//    ).appendWithFont(
-//        " *", customFont!!,
-//        ForegroundColorSpan(ContextCompat.getColor(context, R.color.primaryColor))
-//    ).build()
-//}
-
-fun TextView.setTextColor(color: Int) {
-    this.setTextColor(ContextCompat.getColor(this.context, color))
+fun View.visible(){
+    if (visibility != View.VISIBLE){
+        visibility = View.VISIBLE
+    }
+}
+fun View.gone(){
+    if (visibility != View.GONE){
+        visibility = View.GONE
+    }
 }
 
 fun TextView.setTextViewDrawableColor(color: Int) {
@@ -60,20 +49,6 @@ fun TextView.setTextViewDrawableColor(color: Int) {
                 PorterDuffColorFilter(color, PorterDuff.Mode.SRC_ATOP)
         }
 
-    }
-}
-
-fun Calendar.getCurrentDateString(): String {
-    val currentDateFormat = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
-    return currentDateFormat.format(this.time)
-}
-
-
-fun String.toDoubleOrZero(): Double {
-    return try {
-        this.toDouble()
-    } catch (e: NumberFormatException) {
-        0.0
     }
 }
 

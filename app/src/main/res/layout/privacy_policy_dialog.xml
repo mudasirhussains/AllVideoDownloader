@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_370sdp"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/dialogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:text="Privacy Policy"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="8dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="8dp" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/checkBoxAgree"
+        android:layout_below="@id/dialogTitle"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxAgree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialogTitle">
+
+        <TextView
+            android:id="@+id/dialogText"
+            android:textSize="16sp"
+            android:lineHeight="22sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Important Note: But I must explain to you how all this mistaken idea Important Note: But I must explain to you how all this mistaken idea Important Note: But I must explain to you how all this mistaken idea Important Note: But I must explain to you how all this mistaken idea Important Note: But I must explain to you how all this mistaken idea Important Note: But I must explain to you how all this mistaken idea Important Note: But I must explain to you how all this mistaken idea Important Note: But I must explain to you how all this mistaken idea Important Note: But I must explain to you how all this mistaken idea Important Note: But I must explain to you how all this mistaken idea Important Note: But I must explain to you how all this mistaken idea Important Note: But I must explain to you how all this mistaken idea Important Note: But I must explain to you how all this mistaken idea Important Note: But I must explain to you how all this mistaken idea Important Note: But I must explain to you how all this mistaken idea "
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </ScrollView>
+
+    <CheckBox
+        android:id="@+id/checkBoxAgree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:text="I have read and agree to the terms and conditions above"
+        app:layout_constraintBottom_toTopOf="@+id/btnDialogAgree"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDialogAgree"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/gradient_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="10dp"
+        android:text="Agree"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/btnDialogClose"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnDialogClose"
+        app:layout_constraintTop_toTopOf="@+id/btnDialogClose"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDialogClose"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/gradient_button"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="10dp"
+        android:text="Close"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnDialogAgree"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

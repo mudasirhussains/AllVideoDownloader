@@ -39,22 +39,26 @@
         app:layout_constraintTop_toBottomOf="@+id/guidelineTop" />
 
     <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etSearchBar"
         android:layout_width="0dp"
         android:layout_height="50dp"
+        android:inputType="text"
+        android:maxLines="1"
         android:background="@android:color/transparent"
         android:drawableLeft="@drawable/drawer_download"
         android:drawablePadding="@dimen/_6sdp"
         android:hint="Past your link"
         android:paddingHorizontal="@dimen/_6sdp"
-        app:layout_constraintEnd_toStartOf="@+id/appCompatImageView3"
+        app:layout_constraintEnd_toStartOf="@+id/btnSearch"
         app:layout_constraintStart_toStartOf="@+id/searchBackground"
         app:layout_constraintTop_toBottomOf="@+id/guidelineTop" />
 
     <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/appCompatImageView3"
+        android:id="@+id/btnSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingHorizontal="@dimen/_6sdp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
         android:src="@android:drawable/ic_menu_search"
         app:layout_constraintBottom_toBottomOf="@+id/searchBackground"
         app:layout_constraintEnd_toEndOf="@+id/searchBackground"
