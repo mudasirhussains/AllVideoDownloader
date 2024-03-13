@@ -2,12 +2,13 @@ plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
     id("kotlin-kapt")
-    id ("com.google.dagger.hilt.android") version "2.41" apply false
+    id("kotlin-android")
+    //id ("com.google.dagger.hilt.android") version "2.41" apply false
 }
 
 android {
     namespace = "com.example.allvideodownloader"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.allvideodownloader"
@@ -42,30 +43,35 @@ android {
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.7.0'")
+    implementation("androidx.core:core-ktx:1.8.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.3.1")
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.9.0")
+    implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.7.20")
+//    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.7.20")
     //design libs
-    implementation("com.intuit.sdp:sdp-android:1.0.6")
+    implementation("com.intuit.sdp:sdp-android:1.1.0")
     implementation("de.hdodenhof:circleimageview:3.1.0")
-    //For RoomDb
-    implementation("androidx.room:room-runtime:2.5.1")
-    kapt("androidx.room:room-compiler:2.5.1")
+//    //For RoomDb
+//    implementation("androidx.room:room-runtime:2.5.1")
+//    kapt("androidx.room:room-compiler:2.5.1")
     // Dependency Injection
-    implementation("com.google.dagger:hilt-android:2.40.5")
-    implementation("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
-    kapt("com.google.dagger:hilt-android-compiler:2.40.5")
-    kapt("androidx.hilt:hilt-compiler:1.0.0")
+//    implementation("com.google.dagger:hilt-android:2.40.5")
+//    implementation("androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03")
+//    kapt("com.google.dagger:hilt-android-compiler:2.40.5")
+//    kapt("androidx.hilt:hilt-compiler:1.0.0")
     //firebase
-    implementation(platform("com.google.firebase:firebase-bom:32.2.2"))
-    implementation("com.google.firebase:firebase-core:21.1.1")
-    implementation("com.google.firebase:firebase-messaging:23.2.1")
-    implementation("com.google.firebase:firebase-database:20.2.2")
+//    implementation(platform("com.google.firebase:firebase-bom:32.2.2"))
+//    implementation("com.google.firebase:firebase-core:21.1.1")
+//    implementation("com.google.firebase:firebase-messaging:23.2.1")
+//    implementation("com.google.firebase:firebase-database:20.2.2")
     //dexter
     implementation("com.karumi:dexter:6.2.3")
+    implementation("com.github.yausername.youtubedl-android:library:0.15.0")
+    implementation("com.github.yausername.youtubedl-android:ffmpeg:0.15.0")
+    implementation("com.github.yausername.youtubedl-android:aria2c:0.15.0")
+    implementation("io.reactivex.rxjava2:rxandroid:2.1.0")
 }

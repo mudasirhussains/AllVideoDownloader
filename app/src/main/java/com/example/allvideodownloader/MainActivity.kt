@@ -3,6 +3,7 @@ package com.example.allvideodownloader
 import android.content.res.Configuration
 import android.graphics.PorterDuff
 import android.os.Bundle
+import android.util.Log
 import android.view.Gravity
 import android.view.MenuItem
 import android.widget.TextView
@@ -20,6 +21,8 @@ import com.example.allvideodownloader.home.HomeFragment
 import com.example.allvideodownloader.progress.ProgressFragment
 import com.example.allvideodownloader.utils.setTextViewDrawableColor
 import com.google.android.material.navigation.NavigationView
+import com.yausername.youtubedl_android.YoutubeDL
+import com.yausername.youtubedl_android.YoutubeDLException
 
 
 class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -29,6 +32,11 @@ class MainActivity : BaseActivity(), NavigationView.OnNavigationItemSelectedList
     private lateinit var toggle: ActionBarDrawerToggle
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        try {
+            YoutubeDL.getInstance().init(application)
+        } catch (e: YoutubeDLException) {
+            Log.e("Error-Youtube-DL:", "failed to initialize youtubedl-android", e)
+        }
         setBinding()
         setupDrawerLayout()
         initFragments()

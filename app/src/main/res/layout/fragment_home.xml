@@ -105,7 +105,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:layout_height="wrap_content"
-                android:src="@drawable/facebook_icon" />
+                android:src="@drawable/instagram" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
@@ -193,7 +193,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:layout_height="wrap_content"
-                android:src="@drawable/facebook_icon" />
+                android:src="@drawable/vimeo" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
@@ -251,7 +251,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:layout_height="wrap_content"
-                android:src="@drawable/facebook_icon" />
+                android:src="@drawable/twitter" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
@@ -362,7 +362,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:layout_height="wrap_content"
-                android:src="@drawable/facebook_icon" />
+                android:src="@drawable/whatsapp" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
@@ -370,7 +370,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:textSize="12sp"
-                android:text="@string/facebook"
+                android:text="Whatsapp"
                 android:textStyle="bold" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
@@ -390,7 +390,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:layout_height="wrap_content"
-                android:src="@drawable/facebook_icon" />
+                android:src="@drawable/whatsapp" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:layout_width="match_parent"
@@ -398,7 +398,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:textSize="12sp"
-                android:text="@string/facebook"
+                android:text="Whatsapp business"
                 android:textStyle="bold" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>

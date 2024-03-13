@@ -54,7 +54,7 @@ class AboutFragment : Fragment() {
             if (checkBox.isChecked){
                 dialog.dismiss()
             }else{
-                activity?.showToast("Accept to continue..")
+                activity?.showToast(getString(R.string.accept_to_continue))
             }
         }
         dialog.show()
